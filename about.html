@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Travel Hotel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="about-page" id="about-page">
+    <header class="sticky-top">
+      <div class="top-bar">
+        <div class="container-fluid">
+          <div class="row-d">
+            <div class="left-column">
+              <div class="number">
+                <i class="fa-solid fa-phone"></i>
+                <a class="phone" href="tel:+545464654">+545464654</a>
+              </div>
+              <div class="email">
+                <i class="fas fa-envelope"></i>
+                <a class="email" href="mailto:example@gmail.com"
+                  >example@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="right-column">
+              <div class="top-social">
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.linkedin.com" target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="https://www.tiktok.com" target="_blank"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+                <a href="https://www.whatsapp.com" target="_blank"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"
+            ><img src="./images/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link <?php if($currentPage =='home'){echo 'active';}?>"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link <?php if($currentPage =='team'){echo 'active';}?>"
+                  href="services.html"
+                  >Service</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link <?php if($currentPage =='service'){echo 'active';}?>"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active <?php if($currentPage =='about'){echo 'active';}?>"
+                  href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link <?php if($currentPage =='contact'){echo 'active';}?>"
+                  href="contact.html"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <a
+              class="nav-link btn become-partner btn-deep-red <?php if($currentPage =='home'){echo 'active';}?>"
+              href="contact.html"
+              >Become a Partner
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="breadcumb-area">
+        <div class="container">
+          <div class="row-d">
+            <div class="col-md-12 breadcrumb-content">
+              <div class="breadcumb-heading">
+                <h2>About Us</h2>
+              </div>
+              <div class="breadcumb-inner">
+                <ul>
+                  <li>
+                    <a href="/index.html">Home</a>
+                  </li>
+                  <i class="fa-regular fa-angle-right"></i>
+                  <span class="current">About Us</span>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="business-service">
+        <div class="container">
+          <div class="row-d">
+            <div class="business-service-column">
+              <div class="service-item">
+                <div class="service_top_image">
+                  <img src="./images/blog-1.jpg" alt="" />
+                </div>
+                <div class="text_box">
+                  <h3>Our Story</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="business-service-column">
+              <div class="service-item">
+                <div class="service_top_image">
+                  <img src="./images/blog-2.jpg" alt="" />
+                </div>
+                <div class="text_box">
+                  <h3>Our mission</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="booking-type-section">
+        <div class="container">
+          <div class="row-d">
+            <a class="column-link" href="">
+              <div class="booking-type-column active">
+                <div class="sub-item front-site">
+                  <h3>100+</h3>
+                  <p>partner</p>
+                </div>
+                <div class="back-site">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="column-link" href="">
+              <div class="booking-type-column active">
+                <div class="sub-item front-site">
+                  <h3>2k+</h3>
+                  <p>properties</p>
+                </div>
+                <div class="back-site">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="column-link" href="">
+              <div class="booking-type-column active">
+                <div class="sub-item front-site">
+                  <h3>300+</h3>
+                  <p>destinations</p>
+                </div>
+                <div class="back-site">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="column-link" href="">
+              <div class="booking-type-column active">
+                <div class="sub-item front-site">
+                  <h3>40k+</h3>
+                  <p>booking</p>
+                </div>
+                <div class="back-site">
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="founder-details">
+        <div class="container">
+          <div class="content">
+            <div class="text-center">
+              <div class="section-heading">
+                <p>
+                  "Aenean sollicitudin, erat a elementum rutrum, neque sem
+                  pretium metus, quis mollis nisl nunc et massa. Nam dapibus
+                  nisl vitae elit fringilla rutrum."
+                </p>
+              </div>
+              <div class="founder-content">
+                <img src="./images/founder.jpg" alt="" />
+                <div class="name-designation">
+                  <h4>Adam Blin</h4>
+                  <p>Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-slider-section">
+        <div class="about-slider">
+          <div class="sld">
+            <img src="./images/gallary_1.jpg" alt="" />
+            <div class="background-overlay">
+              <div class="container">
+                <div class="slider-content slider-content-1">
+                  <h2 class="heading">Life at Traveler</h2>
+                  <div class="btn-group">
+                    <a class="btn btn-bg btn-deep-red" href="#">
+                      Join Our Team
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sld">
+            <img src="./images/gallary_2.jpg" alt="" />
+            <div class="background-overlay">
+              <div class="container">
+                <div class="slider-content slider-content-1">
+                  <h2 class="heading">Life at Traveler</h2>
+                  <div class="btn-group">
+                    <a class="btn btn-bg btn-deep-red" href="#">
+                      Join Our Team
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sld">
+            <img src="./images/gallary_1.jpg" alt="" />
+            <div class="background-overlay">
+              <div class="container">
+                <div class="slider-content slider-content-1">
+                  <h2 class="heading">Life at Traveler</h2>
+                  <div class="btn-group">
+                    <a class="btn btn-bg btn-deep-red" href="#">
+                      Join Our Team
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-services-section">
+        <div class="container">
+          <div class="section-heading">
+            <h3 class="heading text-center">Leadership Team</h3>
+          </div>
+          <div class="about-service-main">
+            <div class="row-d images">
+              <div class="content-column">
+                <div class="about-people">
+                  <div class="prot_content_inner">
+                    <div class="em_port_content">
+                      <div class="porttitle_inner">
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./images/people-1.jpg" alt="" />
+                </div>
+                <div class="information">
+                  <h5>Eva Hicks</h5>
+                  <p>CEO</p>
+                </div>
+              </div>
+              <div class="content-column">
+                <div class="about-people">
+                  <div class="prot_content_inner">
+                    <div class="em_port_content">
+                      <div class="porttitle_inner">
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./images/people-2.jpg" alt="" />
+                </div>
+                <div class="information">
+                  <h5>Evan Porter</h5>
+                  <p>COO</p>
+                </div>
+              </div>
+              <div class="content-column">
+                <div class="about-people">
+                  <div class="prot_content_inner">
+                    <div class="em_port_content">
+                      <div class="porttitle_inner">
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./images/people-3.jpg" alt="" />
+                </div>
+                <div class="information">
+                  <h5>Donald Wolf</h5>
+                  <p>Account Manager</p>
+                </div>
+              </div>
+              <div class="content-column">
+                <div class="about-people">
+                  <div class="prot_content_inner">
+                    <div class="em_port_content">
+                      <div class="porttitle_inner">
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./images/people-4.jpg" alt="" />
+                </div>
+                <div class="information">
+                  <h5>Charlie Harrington</h5>
+                  <p>Sales Support</p>
+                </div>
+              </div>
+              <div class="content-column">
+                <div class="about-people">
+                  <div class="prot_content_inner">
+                    <div class="em_port_content">
+                      <div class="porttitle_inner">
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./images/people-4.jpg" alt="" />
+                </div>
+                <div class="information">
+                  <h5>Kody Byrd</h5>
+                  <p>QC Manager</p>
+                </div>
+              </div>
+              <div class="content-column">
+                <div class="about-people">
+                  <div class="prot_content_inner">
+                    <div class="em_port_content">
+                      <div class="porttitle_inner">
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./images/people-2.jpg" alt="" />
+                </div>
+                <div class="information">
+                  <h5>Melody Marshall</h5>
+                  <p>Order Manager</p>
+                </div>
+              </div>
+              <div class="content-column">
+                <div class="about-people">
+                  <div class="prot_content_inner">
+                    <div class="em_port_content">
+                      <div class="porttitle_inner">
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./images/people-3.jpg" alt="" />
+                </div>
+                <div class="information">
+                  <h5>Kody Byrd</h5>
+                  <p>QC Manager</p>
+                </div>
+              </div>
+              <div class="content-column">
+                <div class="about-people">
+                  <div class="prot_content_inner">
+                    <div class="em_port_content">
+                      <div class="porttitle_inner">
+                        <ul>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href=""
+                              ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./images/people-2.jpg" alt="" />
+                </div>
+                <div class="information">
+                  <h5>Lee Cunningham</h5>
+                  <p>Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sign-up-newsletter">
+        <div class="container">
+          <div class="content">
+            <div class="d-flex align-items-center">
+              <div class="img-email-sub">
+                <img src="./images/email_subscribe.svg" alt="" />
+              </div>
+              <div class="section-heading">
+                <h2 class="heading">Get Updates & More</h2>
+                <p>Thoughtful thoughts to your inbox</p>
+              </div>
+            </div>
+            <form class="input-container">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="email"
+                placeholder="Email*"
+                required
+              />
+              <input
+                type="button"
+                class="btn-blue"
+                id="button"
+                value="Subscribe"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-main">
+            <div class="footer-item footer-logo">
+              <a href="/"><img src="./images/logo.png" alt="" /></a>
+            </div>
+            <div class="footer-item">
+              <div>
+                <h3>Company</h3>
+                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link" href="">About Us</a>
+              </div>
+            </div>
+            <div class="footer-item">
+              <h3>Support</h3>
+              <a class="nav-link" href="">Account</a>
+              <a class="nav-link" href="">Legal</a>
+            </div>
+            <div class="footer-item">
+              <h3>Need Help?</h3>
+              <p>
+                Example place, USA<br />
+                USA
+              </p>
+              <div class="number num-email mt-1">
+                <i class="fa-solid fa-phone"></i>
+                <a class="phone nav-link" href="tel:+46546-456456"
+                  >+4564-564654</a
+                >
+              </div>
+              <div class="email num-email">
+                <i class="fas fa-envelope"></i>
+                <a class="email nav-link" href="mailto:example@gmail.com"
+                  >example@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="footer-item social-item">
+              <h3>Follow Us</h3>
+              <ul class="navbar-nav">
+                <li class="nav-item facebook">
+                  <a
+                    target="_blank"
+                    class="nav-link"
+                    href="https://www.facebook.com/"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="nav-item linkedin">
+                  <a
+                    target="_blank"
+                    class="nav-link"
+                    href="https://www.linkedin.com/"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="nav-item youtube">
+                  <a
+                    target="_blank"
+                    class="nav-link"
+                    href="https://www.youtube.com/"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="nav-item instagram">
+                  <a
+                    target="_blank"
+                    class="nav-link"
+                    href="https://www.instagram.com/"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>© 2022 Travel. All Rights Reserved. USA.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
