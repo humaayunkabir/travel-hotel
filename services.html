@@ -1,487 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>Travel Hotel</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body class="services-page" id="services-page">
-    <header class="sticky-top">
-      <div class="top-bar">
-        <div class="container-fluid">
-          <div class="row-d">
-            <div class="left-column">
-              <div class="number">
-                <i class="fa-solid fa-phone"></i>
-                <a class="phone" href="tel:+545464654">+545464654</a>
-              </div>
-              <div class="email">
-                <i class="fas fa-envelope"></i>
-                <a class="email" href="mailto:example@gmail.com"
-                  >example@gmail.com</a
-                >
-              </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <title>Travel Hotel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body class="services-page" id="services-page">
+  <header class="sticky-top">
+    <div class="top-bar">
+      <div class="container-fluid">
+        <div class="row-d">
+          <div class="left-column">
+            <div class="number">
+              <i class="fa-solid fa-phone"></i>
+              <a class="phone" href="tel:+545464654">+545464654</a>
             </div>
-            <div class="right-column">
-              <div class="top-social">
-                <a href="https://www.facebook.com" target="_blank"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="https://www.linkedin.com" target="_blank"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-                <a href="https://www.tiktok.com" target="_blank"
-                  ><i class="fa-brands fa-tiktok"></i
-                ></a>
-                <a href="https://www.whatsapp.com" target="_blank"
-                  ><i class="fa-brands fa-whatsapp"></i
-                ></a>
-              </div>
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <a class="email" href="mailto:example@gmail.com">example@gmail.com</a>
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="top-social">
+              <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/"
-            ><img src="./images/logo.png" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="./images/logo.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-3 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link <?php if($currentPage =='home'){echo 'active';}?>"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active <?php if($currentPage =='team'){echo 'active';}?>"
-                  href="#"
-                  >Service</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link <?php if($currentPage =='service'){echo 'active';}?>"
-                  href="gallery.html"
-                  >Gallery</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link <?php if($currentPage =='about'){echo 'active';}?>"
-                  href="about.html"
-                  >About Us</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link <?php if($currentPage =='contact'){echo 'active';}?>"
-                  href="contact.html"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-            <a
-              class="nav-link btn become-partner btn-deep-red <?php if($currentPage =='home'){echo 'active';}?>"
-              href="contact.html"
-              >Become a Partner
-            </a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-3 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <a class="nav-link btn become-partner btn-deep-red" href="contact.html">Become a Partner
+          </a>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section class="breadcumb-area">
-        <div class="container">
-          <div class="row-d">
-            <div class="col-md-12 breadcrumb-content">
-              <div class="breadcumb-heading">
-                <h2>Services</h2>
-              </div>
-              <div class="breadcumb-inner">
-                <ul>
-                  <li>
-                    <a href="/index.html">Home</a>
-                  </li>
-                  <i class="fa-regular fa-angle-right"></i>
-                  <span class="current">Services</span>
-                </ul>
-              </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="breadcumb-area">
+      <div class="container">
+        <div class="row-d">
+          <div class="col-md-12 breadcrumb-content">
+            <div class="breadcumb-heading">
+              <h2>Services</h2>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="booking-type-section">
-        <div class="container">
-          <div class="section-heading">
-            <h3 class="heading">Our Services</h3>
-            <p>Hotels highly rated for thoughtful design</p>
-          </div>
-          <div class="row-d">
-            <a class="column-link" href="all-services.html">
-              <div class="booking-type-column active">
-                <div class="sub-item">
-                  <span>01</span>
-                  <i class="fas fa-home"></i>
-                  <h3>hotel booking</h3>
-                </div>
-              </div>
-            </a>
-            <a class="column-link" href="all-services.html">
-              <div class="booking-type-column">
-                <div class="sub-item">
-                  <span>02</span>
-                  <i class="fa-solid fa-car-side"></i>
-                  <h3>car booking</h3>
-                </div>
-              </div>
-            </a>
-            <a class="column-link" href="all-services.html">
-              <div class="booking-type-column">
-                <div class="sub-item">
-                  <span>03</span>
-                  <i class="fa-solid fa-route"></i>
-                  <h3>traveling</h3>
-                </div>
-              </div>
-            </a>
-            <a class="column-link" href="all-services.html">
-              <div class="booking-type-column">
-                <div class="sub-item">
-                  <span>04</span>
-                  <i class="fab fa-servicestack"></i>
-                  <h3>guide</h3>
-                </div>
-              </div>
-            </a>
-            <a class="column-link" href="all-services.html">
-              <div class="booking-type-column">
-                <div class="sub-item">
-                  <span>05</span>
-                  <i class="fa-solid fa-ticket"></i>
-                  <h3>ticket booking</h3>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="top-services-section">
-        <div class="container">
-          <div class="section-heading">
-            <h3 class="heading">Top Services</h3>
-            <p>Hotels highly rated for thoughtful design</p>
-          </div>
-          <div class="top-services-section-main-column d-flex">
-            <div class="col-6 top-services-text-column">
-              <div class="colmn-main">
-                <div class="text-column-p">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                  <div class="mt-3">
-                    <div class="item-cont d-flex align-items-start">
-                      <i class="fa-solid fa-circle-dot"></i>
-                      <a href="all-services.html">
-                        <p>Hotel Booking</p>
-                      </a>
-                    </div>
-                    <div class="item-cont d-flex align-items-start">
-                      <i class="fa-solid fa-circle-dot"></i>
-                      <a href="all-services.html">
-                        <p>Car Booking</p>
-                      </a>
-                    </div>
-                    <div class="item-cont d-flex align-items-start">
-                      <i class="fa-solid fa-circle-dot"></i>
-                      <a href="all-services.html">
-                        <p>Traveling</p>
-                      </a>
-                    </div>
-                    <div class="item-cont d-flex align-items-start">
-                      <i class="fa-solid fa-circle-dot"></i>
-                      <a href="all-services.html">
-                        <p>Guide</p>
-                      </a>
-                    </div>
-                    <div class="item-cont d-flex align-items-start">
-                      <i class="fa-solid fa-circle-dot"></i>
-                      <a href="all-services.html">
-                        <p>Ticket Booking</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <a class="btn btn-blue" href="#">More Services</a>
-              </div>
-            </div>
-            <div class="col-6 slider-column">
-              <div class="slider">
-                <div class="slider-img-col">
-                  <img src="./images/services1.jpg" alt="" />
-                </div>
-                <div class="slider-img-col">
-                  <img src="./images/services2.jpg" alt="" />
-                </div>
-                <div class="slider-img-col">
-                  <img src="./images/services3.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="services-section">
-        <div class="container">
-          <div class="section-heading">
-            <h3 class="heading">Top Destinations</h3>
-            <p>It is a long established fact that a reader</p>
-          </div>
-          <div class="service-main">
-            <div class="row-d images">
-              <div class="content-column">
-                <img src="./images/services1.jpg" alt="" />
-                <div class="prot_content_inner">
-                  <div class="em_port_content">
-                    <div class="porttitle_inner">
-                      <a href="">
-                        <h4 class="title btn-white">California</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content-column">
-                <img src="./images/services2.jpg" alt="" />
-                <div class="prot_content_inner">
-                  <div class="em_port_content">
-                    <div class="porttitle_inner">
-                      <a href="">
-                        <h4 class="title btn-white">Nevada</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content-column">
-                <img src="./images/services3.jpg" alt="" />
-                <div class="prot_content_inner">
-                  <div class="em_port_content">
-                    <div class="porttitle_inner">
-                      <a href="">
-                        <h4 class="title btn-white">Los Angeles</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content-column">
-                <img src="./images/services4.jpg" alt="" />
-                <div class="prot_content_inner">
-                  <div class="em_port_content">
-                    <div class="porttitle_inner">
-                      <a href="">
-                        <h4 class="title btn-white">San Francisco</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content-column">
-                <img src="./images/services5.jpg" alt="" />
-                <div class="prot_content_inner">
-                  <div class="em_port_content">
-                    <div class="porttitle_inner">
-                      <a href="">
-                        <h4 class="title btn-white">New Jersey</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="content-column">
-                <img src="./images/services6.jpg" alt="" />
-                <div class="prot_content_inner">
-                  <div class="em_port_content">
-                    <div class="porttitle_inner">
-                      <a href="">
-                        <h4 class="title btn-white">Virginia</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="sign-up-newsletter">
-        <div class="container">
-          <div class="content">
-            <div class="d-flex align-items-center">
-              <div class="img-email-sub">
-                <img src="./images/email_subscribe.svg" alt="" />
-              </div>
-              <div class="section-heading">
-                <h2 class="heading">Get Updates & More</h2>
-                <p>Thoughtful thoughts to your inbox</p>
-              </div>
-            </div>
-            <form class="input-container">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="email"
-                placeholder="Email*"
-                required
-              />
-              <input
-                type="button"
-                class="btn-blue"
-                id="button"
-                value="Subscribe"
-              />
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <div class="container">
-          <div class="footer-main">
-            <div class="footer-item footer-logo">
-              <a href="/"><img src="./images/logo.png" alt="" /></a>
-            </div>
-            <div class="footer-item">
-              <div>
-                <h3>Company</h3>
-                <a class="nav-link" href="">Contact Us</a>
-                <a class="nav-link" href="">About Us</a>
-              </div>
-            </div>
-            <div class="footer-item">
-              <h3>Support</h3>
-              <a class="nav-link" href="">Account</a>
-              <a class="nav-link" href="">Legal</a>
-            </div>
-            <div class="footer-item">
-              <h3>Need Help?</h3>
-              <p>
-                Example place, USA<br />
-                USA
-              </p>
-              <div class="number num-email mt-1">
-                <i class="fa-solid fa-phone"></i>
-                <a class="phone nav-link" href="tel:+46546-456456"
-                  >+4564-564654</a
-                >
-              </div>
-              <div class="email num-email">
-                <i class="fas fa-envelope"></i>
-                <a class="email nav-link" href="mailto:example@gmail.com"
-                  >example@gmail.com</a
-                >
-              </div>
-            </div>
-            <div class="footer-item social-item">
-              <h3>Follow Us</h3>
-              <ul class="navbar-nav">
-                <li class="nav-item facebook">
-                  <a
-                    target="_blank"
-                    class="nav-link"
-                    href="https://www.facebook.com/"
-                    ><i class="fa-brands fa-facebook-f"></i
-                  ></a>
+            <div class="breadcumb-inner">
+              <ul>
+                <li>
+                  <a href="/index.html">Home</a>
                 </li>
-                <li class="nav-item linkedin">
-                  <a
-                    target="_blank"
-                    class="nav-link"
-                    href="https://www.linkedin.com/"
-                    ><i class="fa-brands fa-linkedin-in"></i
-                  ></a>
-                </li>
-                <li class="nav-item youtube">
-                  <a
-                    target="_blank"
-                    class="nav-link"
-                    href="https://www.youtube.com/"
-                    ><i class="fa-brands fa-youtube"></i
-                  ></a>
-                </li>
-                <li class="nav-item instagram">
-                  <a
-                    target="_blank"
-                    class="nav-link"
-                    href="https://www.instagram.com/"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </li>
+                <i class="fa-regular fa-angle-right"></i>
+                <span class="current">Services</span>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <div class="container">
-          <p>© 2022 Travel. All Rights Reserved. USA.</p>
+    </section>
+    <section class="booking-type-section">
+      <div class="container">
+        <div class="section-heading">
+          <h3 class="heading">Our Services</h3>
+          <p>Hotels highly rated for thoughtful design</p>
+        </div>
+        <div class="row-d">
+          <a class="column-link" href="all-services.html">
+            <div class="booking-type-column active">
+              <div class="sub-item">
+                <span>01</span>
+                <i class="fas fa-home"></i>
+                <h3>hotel booking</h3>
+              </div>
+            </div>
+          </a>
+          <a class="column-link" href="all-services.html">
+            <div class="booking-type-column">
+              <div class="sub-item">
+                <span>02</span>
+                <i class="fa-solid fa-car-side"></i>
+                <h3>car booking</h3>
+              </div>
+            </div>
+          </a>
+          <a class="column-link" href="all-services.html">
+            <div class="booking-type-column">
+              <div class="sub-item">
+                <span>03</span>
+                <i class="fa-solid fa-route"></i>
+                <h3>traveling</h3>
+              </div>
+            </div>
+          </a>
+          <a class="column-link" href="all-services.html">
+            <div class="booking-type-column">
+              <div class="sub-item">
+                <span>04</span>
+                <i class="fab fa-servicestack"></i>
+                <h3>guide</h3>
+              </div>
+            </div>
+          </a>
+          <a class="column-link" href="all-services.html">
+            <div class="booking-type-column">
+              <div class="sub-item">
+                <span>05</span>
+                <i class="fa-solid fa-ticket"></i>
+                <h3>ticket booking</h3>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-    </footer>
+    </section>
+    <section class="top-services-section">
+      <div class="container">
+        <div class="section-heading">
+          <h3 class="heading">Top Services</h3>
+          <p>Hotels highly rated for thoughtful design</p>
+        </div>
+        <div class="top-services-section-main-column d-flex">
+          <div class="col-6 top-services-text-column">
+            <div class="colmn-main">
+              <div class="text-column-p">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a
+                  type specimen book.
+                </p>
+                <div class="mt-3">
+                  <div class="item-cont d-flex align-items-start">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <a href="all-services.html">
+                      <p>Hotel Booking</p>
+                    </a>
+                  </div>
+                  <div class="item-cont d-flex align-items-start">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <a href="all-services.html">
+                      <p>Car Booking</p>
+                    </a>
+                  </div>
+                  <div class="item-cont d-flex align-items-start">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <a href="all-services.html">
+                      <p>Traveling</p>
+                    </a>
+                  </div>
+                  <div class="item-cont d-flex align-items-start">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <a href="all-services.html">
+                      <p>Guide</p>
+                    </a>
+                  </div>
+                  <div class="item-cont d-flex align-items-start">
+                    <i class="fa-solid fa-circle-dot"></i>
+                    <a href="all-services.html">
+                      <p>Ticket Booking</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-blue" href="#">More Services</a>
+            </div>
+          </div>
+          <div class="col-6 slider-column">
+            <div class="slider">
+              <div class="slider-img-col">
+                <img src="./images/services1.jpg" alt="" />
+              </div>
+              <div class="slider-img-col">
+                <img src="./images/services2.jpg" alt="" />
+              </div>
+              <div class="slider-img-col">
+                <img src="./images/services3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services-section">
+      <div class="container">
+        <div class="section-heading">
+          <h3 class="heading">Top Destinations</h3>
+          <p>It is a long established fact that a reader</p>
+        </div>
+        <div class="service-main">
+          <div class="row-d images">
+            <div class="content-column">
+              <img src="./images/services1.jpg" alt="" />
+              <div class="prot_content_inner">
+                <div class="em_port_content">
+                  <div class="porttitle_inner">
+                    <a href="">
+                      <h4 class="title btn-white">California</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-column">
+              <img src="./images/services2.jpg" alt="" />
+              <div class="prot_content_inner">
+                <div class="em_port_content">
+                  <div class="porttitle_inner">
+                    <a href="">
+                      <h4 class="title btn-white">Nevada</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-column">
+              <img src="./images/services3.jpg" alt="" />
+              <div class="prot_content_inner">
+                <div class="em_port_content">
+                  <div class="porttitle_inner">
+                    <a href="">
+                      <h4 class="title btn-white">Los Angeles</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-column">
+              <img src="./images/services4.jpg" alt="" />
+              <div class="prot_content_inner">
+                <div class="em_port_content">
+                  <div class="porttitle_inner">
+                    <a href="">
+                      <h4 class="title btn-white">San Francisco</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-column">
+              <img src="./images/services5.jpg" alt="" />
+              <div class="prot_content_inner">
+                <div class="em_port_content">
+                  <div class="porttitle_inner">
+                    <a href="">
+                      <h4 class="title btn-white">New Jersey</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-column">
+              <img src="./images/services6.jpg" alt="" />
+              <div class="prot_content_inner">
+                <div class="em_port_content">
+                  <div class="porttitle_inner">
+                    <a href="">
+                      <h4 class="title btn-white">Virginia</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sign-up-newsletter">
+      <div class="container">
+        <div class="content">
+          <div class="d-flex align-items-center">
+            <div class="img-email-sub">
+              <img src="./images/email_subscribe.svg" alt="" />
+            </div>
+            <div class="section-heading">
+              <h2 class="heading">Get Updates & More</h2>
+              <p>Thoughtful thoughts to your inbox</p>
+            </div>
+          </div>
+          <form class="input-container">
+            <input type="email" name="email" id="email" class="email" placeholder="Email*" required />
+            <input type="button" class="btn-blue" id="button" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-item footer-logo">
+            <a href="/"><img src="./images/logo.png" alt="" /></a>
+          </div>
+          <div class="footer-item">
+            <div>
+              <h3>Company</h3>
+              <a class="nav-link" href="">Contact Us</a>
+              <a class="nav-link" href="">About Us</a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h3>Support</h3>
+            <a class="nav-link" href="">Account</a>
+            <a class="nav-link" href="">Legal</a>
+          </div>
+          <div class="footer-item">
+            <h3>Need Help?</h3>
+            <p>
+              Example place, USA<br />
+              USA
+            </p>
+            <div class="number num-email mt-1">
+              <i class="fa-solid fa-phone"></i>
+              <a class="phone nav-link" href="tel:+46546-456456">+4564-564654</a>
+            </div>
+            <div class="email num-email">
+              <i class="fas fa-envelope"></i>
+              <a class="email nav-link" href="mailto:example@gmail.com">example@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-item social-item">
+            <h3>Follow Us</h3>
+            <ul class="navbar-nav">
+              <li class="nav-item facebook">
+                <a target="_blank" class="nav-link" href="https://www.facebook.com/"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li class="nav-item linkedin">
+                <a target="_blank" class="nav-link" href="https://www.linkedin.com/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li class="nav-item youtube">
+                <a target="_blank" class="nav-link" href="https://www.youtube.com/"><i
+                    class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li class="nav-item instagram">
+                <a target="_blank" class="nav-link" href="https://www.instagram.com/"><i
+                    class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <p>© 2022 Travel. All Rights Reserved. USA.</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/index.js"></script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
